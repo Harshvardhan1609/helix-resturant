@@ -12,7 +12,7 @@ const uniqueList  = [...new Set(Menu.map((curElem)=>{
 const Resturant = () => {
 
     const [MenuData , setMenuData] = useState(Menu);
-    const [menuList , setMenuList] = useState(uniqueList);
+    const [menuList] = useState(uniqueList);
 
     const filterItem  = (category) => {
         if(category === "All"){
